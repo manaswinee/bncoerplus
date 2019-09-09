@@ -1,0 +1,35 @@
+2016.06.09 - Version 1.1.0
+    - Fixed issue break single product layout when disable ratings on reviews option
+        Changed file
+            - /woocommerce/single-product/price.php
+
+2016.03.14 - Version 1.0.9
+    - Upgrade Slider Revolution
+        Changed files
+            - function.php
+            - inc/elements/contact_info/cms_contact_info.php
+            - inc/elements/landing_item/cms_landing_item.php
+            - vc_params/cms_fancybox_single.php
+            - vc_params/vc_custom_heading.php
+            - vc_params/vc_single_image.php
+            - vc_params/vc_toggle.php
+            - delete file: vc_params/vc_column.php
+    - Upgrade Woocommerce
+
+2016.01.15 - Version 1.0.8
+    - Fixed Custom css Tab on theme option
+        Changed files
+            - inc/static.css.php
+        - inc/dynamic.css.php
+    - Fixed Use Custom link option on Single Image VC Shortcode
+    	Changed files
+    		- vc_template/vc_single_image.php
+
+2015.12.23 - Version 1.0.7
+    - Fixed responsive on phone - issue not padding in phone
+        Changed files
+            - vc_param/vc_rows.php
+            - vc_param/vc_column.php
+            - vc_param/vc_column_inner.php
+            - vc_template/vc_row.php
+            - assets/scss/structure.scss

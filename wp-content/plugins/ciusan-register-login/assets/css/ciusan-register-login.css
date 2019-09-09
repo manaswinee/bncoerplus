@@ -1,0 +1,235 @@
+form.crl-ajax-auth{
+    display:none;
+    z-index:999999;
+	position:fixed;
+    top:50%;
+	left:50%;
+	width:350px;
+	margin-left:-200px;
+    padding:20px 25px 25px 25px;
+	background-color:#FFFFFF;
+    border-radius:8px;
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow:0 0 6px rgba(0, 0, 0, 0.2);   
+    color:#878787;
+    font-size:11px;
+}
+.crl-ajax-auth h1, .crl-ajax-auth h3, .crl-ajax-auth h5{
+    font-family:'Georgia', 'Times New Roman', Times, serif;
+    font-weight:100;
+    color:#333333;    
+	line-height:0;  
+}
+.crl-ajax-auth h1{
+    font-size:27px;
+    left:15px;
+	margin-top:-10px;
+}
+.crl-ajax-auth h3{
+    font-size:18px;
+    text-align:left;
+    margin:0;
+}
+.crl-ajax-auth h5{
+    font-size:12px;
+    text-align:left;
+    margin:0;
+}
+.crl-ajax-auth hr {
+    background-color:rgba(0, 0, 0, 0.1);
+    border:0 none;
+    height:1px;
+    margin:20px 0;
+}
+/*.crl-ajax-auth input#salutation,
+.crl-ajax-auth input#username,
+.crl-ajax-auth input#first_name,
+.crl-ajax-auth input#last_name,
+.crl-ajax-auth input#signonname,
+.crl-ajax-auth input#email,
+.crl-ajax-auth input#user_login,
+.crl-ajax-auth input#password,
+.crl-ajax-auth input#school{
+    border:1px solid #EDEDED;
+    border-radius:3px 3px 3px 3px;
+    box-shadow:0 0 3px rgba(0, 0, 0, 0.1) inset;
+    color:#333333;
+    font-size:15px;
+    padding:10px 10px 10px 13px;
+    width:300px;
+    margin-bottom:5px;
+    background-color:#F9F9F9;
+    font-family:'Georgia', 'Times New Roman', Times, serif;
+}
+.crl-ajax-auth input#salutation:focus,
+.crl-ajax-auth input#username:focus,
+.crl-ajax-auth input#first_name:focus,
+.crl-ajax-auth input#last_name:focus,
+.crl-ajax-auth input#signonname:focus,
+.crl-ajax-auth input#email:focus,
+.crl-ajax-auth input#user_login:focus,
+.crl-ajax-auth input#password:focus,
+.crl-ajax-auth input#school:focus{
+    background-color:#FFF;
+}*/
+.crl-ajax-auth label.error{
+
+}
+.crl-ajax-auth ::-webkit-input-placeholder{
+	display:none !important;
+}
+.crl-ajax-auth :-moz-placeholder { /* Firefox 18- */
+   color:#bbb;  
+}
+.crl-ajax-auth ::-moz-placeholder {  /* Firefox 19+ */
+   color:#bbb;  
+}
+.crl-ajax-auth :-ms-input-placeholder {  
+   color:#bbb;  
+}
+.crl-ajax-auth input.error{
+	border-bottom:1px solid #FF0000 !important;
+}
+.crl-ajax-auth input.button{
+    float:right;
+}
+.crl-ajax-auth a{
+    text-decoration:none;
+}
+.crl-ajax-auth a.close{
+    color:#DCDCDC;
+    position:absolute;
+    right:25px;
+    top:25px;
+    opacity: 0.7;
+}
+.crl-ajax-auth a.text-link{
+    color:#B4B2B2;
+    float:left;
+}
+.crl-ajax-auth p.status{
+    text-align:center;
+    margin:-15px 0 20px 0;
+	font-size:18px !important;
+    display:none;
+	color:#FF0000;
+    color: #b5be00;
+    line-height: 28px;
+}
+.crl-ajax-auth span{
+	display:inline-block;
+}
+.crl_overlay{
+    height:100%;
+    width:100%;
+    background-color:#F6F6F6;
+    opacity:0.9;
+    position:fixed;
+    z-index:999998;
+}
+
+.crl-ajax-auth .rolelabel {
+    font-size: 18px;
+    padding: 10px 10px 2px 25px!important;
+    font-family: open Sans!important;
+}
+
+.crl-ajax-auth select#role {
+    width: 82%;
+    color:#222;
+    cursor: pointer;
+}
+
+.crl-ajax-auth h2 {
+    margin-top: 0px;
+    /*margin-bottom: 10px !important;*/
+}
+
+        .cwr_form .input {
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            margin: 2em 1em;
+            max-width: 200px;
+            width: calc(100% - 2em);
+            vertical-align: top;
+        }
+        .cwr_form .input__full {
+            max-width: 100%;
+        }
+        .cwr_form .input__field {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border:none;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+            outline: none;
+            color:#222;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .cwr_form .input__label {
+            display: inline-block;
+            float: right;
+            padding: 0;
+            width: 100%;
+            cursor: text;
+        }
+        .cwr_form .input__label::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transform: scale3d(0.97, 0.85, 1);
+            transform: scale3d(0.97, 0.85, 1);
+            -webkit-transition: -webkit-transform 0.3s;
+            transition: transform 0.3s;
+            -webkit-perspective: 0; 
+        }
+        .cwr_form .input__label-content {
+            position: relative;
+            display: block;
+            width: 100%;
+            -webkit-transition: -webkit-transform 0.3s;
+            transition: transform 0.3s;
+            font-size: 1.5em;
+            color: #aaa;
+            height: 30px;
+            font-weight: lighter;
+            font-family: proximaNovaRegular !important;
+            text-align: left;
+        }
+        .wpcf7-form .cwr_form .input__label-content {
+            font-size: 1em;
+        }
+        .cwr_form .input__field:focus + .input__label::before,
+        .cwr_form .input--filled .input__label::before {
+            -webkit-transform: scale3d(0.99, 0.95, 1);
+            transform: scale3d(0.99, 0.95, 1);
+            -webkit-perspective: 0; 
+        }
+        .cwr_form .input__field:focus + .input__label .input__label-content,
+        .cwr_form .input--filled .input__label .input__label-content {
+            font-size: 12px;
+        }
+
+        .cwr_form .input__field:focus + .input__label,
+        .cwr_form .input--filled .input__label {
+            cursor: default;
+            pointer-events: none;
+        }
+
+        .cwr_form .input__field:focus + .input__label .input__label-content,
+        .cwr_form .input--filled .input__label-content {
+            -webkit-transform: translate3d(0, -2.0em, 0);
+            transform: translate3d(0, -2.0em, 0);
+            -webkit-perspective: 0; 
+        }
